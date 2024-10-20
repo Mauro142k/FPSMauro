@@ -12,7 +12,8 @@ public class Oleadas : MonoBehaviour
     public int enemyType;
     public bool spawning;
     private int enemiesSpawned;
-    private GameManager gameManager;
+   
+    public GameManager gameManager;
 
 
     // Start is called before the first frame update
@@ -22,7 +23,7 @@ public class Oleadas : MonoBehaviour
         wave = 1;
         spawning = false;
         enemiesSpawned = 0;
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+       //gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame

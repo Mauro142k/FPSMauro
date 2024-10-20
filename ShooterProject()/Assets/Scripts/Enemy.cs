@@ -21,13 +21,17 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(vida <= 0)
+        if (vida <= 0)
         {
-          Destroy(gameObject);
-;        }
-        agente.destination = target.position;
-        
-        
+            agente.enabled = false; // Disable NavMeshAgent to prevent further calls
+            Destroy(gameObject);     // Destroy the GameObject
+            return;                  // Exit the Update method to prevent further execution
+        }
+
+        if (agente.enabled)          // Only update destination if NavMeshAgent is enabled
+        {
+            agente.destination = target.position;
+        }
     }
 
 

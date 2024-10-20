@@ -333,7 +333,6 @@ GameObject:
   - component: {fileID: 4091141644621954638}
   - component: {fileID: 4803099106405614062}
   - component: {fileID: 8808522979983606581}
-  - component: {fileID: 4483727910059605214}
   - component: {fileID: 4111655508033768970}
   m_Layer: 0
   m_Name: Player
@@ -437,7 +436,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4483727910059605214}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FPSController, Assembly-CSharp
         m_MethodName: OnMove
         m_Mode: 0
@@ -453,7 +452,7 @@ MonoBehaviour:
     m_ActionName: Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4483727910059605214}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FPSController, Assembly-CSharp
         m_MethodName: OnLook
         m_Mode: 0
@@ -485,7 +484,7 @@ MonoBehaviour:
     m_ActionName: Player/Fire[/Mouse/leftButton]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4483727910059605214}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FPSController, Assembly-CSharp
         m_MethodName: OnSprint
         m_Mode: 0
@@ -501,7 +500,7 @@ MonoBehaviour:
     m_ActionName: Player/Sprint[/Keyboard/leftCtrl]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4483727910059605214}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FPSController, Assembly-CSharp
         m_MethodName: OnCrouch
         m_Mode: 0
@@ -517,7 +516,7 @@ MonoBehaviour:
     m_ActionName: Player/Crouch[/Keyboard/leftShift]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4483727910059605214}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FPSController, Assembly-CSharp
         m_MethodName: OnJump
         m_Mode: 0
@@ -613,31 +612,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4483727910059605214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8949516055557479727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 275ffa2d46550014ab29b2cfb400023f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camHolder: {fileID: 0}
-  speed: 4
-  sprintSpeed: 8
-  crouchSpeed: 2
-  maxForce: 1
-  sensitivity: 0.1
-  jumpForce: 6
-  groundCheck: {fileID: 0}
-  isGrounded: 0
-  groundDetectRadius: 0.1
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
 --- !u!82 &4111655508033768970
 AudioSource:
   m_ObjectHideFlags: 0
